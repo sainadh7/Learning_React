@@ -1,0 +1,53 @@
+Installations needed:
+Node, Yarn
+
+What is React ?
+It is a LIBRARY for developing client side applications
+(HTML + CSS + JS/Typescript)
+
+Other popular:
+Framework: Angular 
+Libraries: Vue, Svelt
+
+
+Framework: Provides a whole ecosystem and an active environment for the development
+Library: It servers a specific purpose and for other functionalities, we needed to develope/get
+the developed plugins.
+
+They are used especially to build SPA: Single Page applications
+Benefits: ??
+
+Why frameworks or libraries:
+> DOM: To prevent low level handlings and get things done in an easy way without
+having concerns about most of the things.
+> Browser Compatibility: using babel
+> Performance: Bundling, Lazyloading and other features (webpack - module builder)
+> Modularity, Reusability etc
+> Component based development: (login,cart,productlist,payment,shipping) promotes Modularity, Reusability and many more
+advantages. Component = UI + operation logic + Model
+
+Javascript
+> A scripting language that runs in the browser (paint HTML + CSS)
+> Browser provides the run time environment for Javascript
+> JS Engines: Chrome: V8, Firefox: SpiderMonkey, IE: Chakra
+
+European Computer Manufacturer's Association: ECMA
+> They maintain and come up with the specification standards for scripting languages (Javascript)
+> This specifications are implemented by the different vendors of JS Engines
+
+Which version of JS should i use then ?
+> Ideally, that which is supported by all engines.
+> But, we can have a transpiler that can convert the code we write in par with
+latest standards and compile it as per Compatibility. 
+Solution: Babel (https://babeljs.io)
+> React makes use of babel
+
+
+Node:
+> Runtime environment based on V8.
+> A wrapper was written on the Chrome's V8 engine.
+> This made it possible to run the Javascript outside the browser.
+
+
+
+
