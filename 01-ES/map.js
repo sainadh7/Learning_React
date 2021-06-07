@@ -12,3 +12,4 @@ let uarray = msgs.map((txt)=>{
     return txt.toUpperCase();
 })
 console.log(msgs);
+console.log(uarray);

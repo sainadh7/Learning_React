@@ -51,6 +51,44 @@ Node:
 Sync/Async Programming:
 > Sync: blocking, Async: Non-blocking
 
+npm: 
+Node Package manager
+https://npmjs.com
+> We generally place executables and some cli tools in global paths.
+> Project level libraries or dependencies are placed in project specific 
+node modules folder.
+> We initialise the node project using npm init command after which a depenndencies
+file : package.json is created.
 
+yarn:
+> Package manager: Manage dependencies (By FaceBook)
+> npm has some security vulnerabilities according to Fb, so for react applications
+we use yarn
 
+React -> Can be written in : JS or Typescript
 
+Typescript:
+Type support added to JS. 
+With the help of it, Code is maintainable and more reliable
+For browser to interpret TypeScript, we need transpiler
+Transpiler(src in .ts) -----> src in .js
+npm i -g Typescript
+tsc --version
+tsc <filename.ts>, tsc --target ES6 <filename.ts>
+
+React:
+Install React CLI : create-react-app
+> npm i -g create-react-app
+> create-react-app firstapp
+
+>npx create-react-app firstapp
+
+> One way to use React is keep going on creating React Elements and then
+adding them to ReactDOM one after other. But this gets cumbersome as and then
+we work on complex UI
+So, JSX
+
+JSX: Javascript Extension (syntactic. sugar)
+
+React Components:
+> Segregated, Reusable UI modules written for rendering
