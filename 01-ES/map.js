@@ -15,4 +15,7 @@ console.log(msgs);
 console.log(uarray);
 
 //let dict = [{id:"1",str:"Thisi s new"},{id:"1",str:"Thisi s new"}]
-let dict = {id:"1",str:"Thisi s new"}
+let dict = {id:"1",str:"This is new"}
+for( let k in dict){
+    console.log( dict[k]);
+}
