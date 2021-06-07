@@ -16,6 +16,8 @@ the developed plugins.
 
 They are used especially to build SPA: Single Page applications
 Benefits: ??
+> All UI code is dumped to client in first hit and post that all interactions
+happen via ajax calls. Data is pulled in and UI is updated and accordingly
 
 Why frameworks or libraries:
 > DOM: To prevent low level handlings and get things done in an easy way without
@@ -33,7 +35,7 @@ Javascript
 
 European Computer Manufacturer's Association: ECMA
 > They maintain and come up with the specification standards for scripting languages (Javascript)
-> This specifications are implemented by the different vendors of JS Engines
+> This specifications are implemented by the different vendor JS Engines
 
 Which version of JS should i use then ?
 > Ideally, that which is supported by all engines.
@@ -50,6 +52,8 @@ Node:
 
 Sync/Async Programming:
 > Sync: blocking, Async: Non-blocking
+> async and await keywords to make functions return promise types using which
+we can implement or handle the synchronisity of function calls.
 
 npm: 
 Node Package manager
@@ -64,6 +68,10 @@ yarn:
 > Package manager: Manage dependencies (By FaceBook)
 > npm has some security vulnerabilities according to Fb, so for react applications
 we use yarn
+
+nodemon:
+> Good support package when developing react/node modules
+> Automatically refreshes the code changes upon saving the js files.
 
 React -> Can be written in : JS or Typescript
 
@@ -92,3 +100,14 @@ JSX: Javascript Extension (syntactic. sugar)
 
 React Components:
 > Segregated, Reusable UI modules written for rendering
+> Composition of React elements
+
+Different ways to create Components:
+Earlier:
+>Stateful: Classes
+>Stateless: Functions
+
+But now, both are equally potent.
+
+Creating an app with typescript support:
+npx create-react-app --template=typescript reacttypepro

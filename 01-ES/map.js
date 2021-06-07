@@ -13,3 +13,6 @@ let uarray = msgs.map((txt)=>{
 })
 console.log(msgs);
 console.log(uarray);
+
+//let dict = [{id:"1",str:"Thisi s new"},{id:"1",str:"Thisi s new"}]
+let dict = {id:"1",str:"Thisi s new"}
