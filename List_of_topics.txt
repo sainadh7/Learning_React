@@ -1,0 +1,118 @@
+Description:
+React is a popular, high-performance JavaScript library for building rapidly responsive user interfaces. React makes it painless t  create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier t   debug.Redux is a state management tool. While it's mostly used with React, it can be used with any other JavaScript framework or library.
+
+What to learn ?
+> Use React components to build interactive interfaces
+> Configure simple and complex routing
+> Master advanced React skills
+> Learn React best practices
+
+Concepts to Cover:
+?React
+>Overview
+    Understand the View Technology  
+    MVC – Model View Controller
+    MVVM - Model–view–viewmodel     
+    What is React?
+    Understanding View Technology   
+    Single Page Applications
+    Multi Page Applications
+    React and SPA
+    Node and NPM basics 
+    
+>ES6 Fundamentals
+    Default Parameters  
+    Arrow Functions
+    Template Literals
+    Multiline String
+    Scoping using Let and Const Keywords    
+    Spread Syntax and Rest Parameters
+    Destructuring
+    Promises
+    Async / Await
+    Classes and Objects
+
+> React Basics
+    DOM vs Virtual DOM
+    How does the Virtual DOM work?  Introduction
+    Installation and basic setup
+    React CLI tool
+    Basic Setup
+
+> JSX
+    What is JSX?
+    Babel
+    React.createElement
+    Embedding Expressions in JSX  
+    Attributes with JSX
+    Props
+    JSX Children
+
+> React Components
+    Creating Components
+    Functional Components
+    Class Components
+    Extending React.Component     
+    Stateless Functions
+    Rendering Component
+    Referencing DOM Elements  
+    Higher Order Components
+
+> React Elements & JSX
+    Rendering
+    Sending and Receiving Props   
+    Setting Default Props
+
+> React State
+    What is Component State?
+    Working with Component State  
+    State vs. Props
+    Initializing State
+    Updating State
+    Working with Forms
+    Refs
+    Lifting State Up
+
+> React Composing Components
+    Sibling Components and Keys   
+    Parent and Child Components     
+    Component Life-Cycle
+        componentDidMount
+        componentWillUpdate
+        componentDidUpdate
+        componentWillReceiveProps
+        componentWillUnmount
+
+> React - Events
+    Event Handlers
+    Passing Arguments 
+
+> Axios
+    Installation
+    Make XMLHttpRequests from the browser     
+    Intercept request and response
+    Promise API Support
+
+> React Routing
+    Router Dom  
+    Browser Router
+    Route
+    Link
+    Passing Parameter 
+    
+> Redux
+    Introduction
+    Pure Functions
+    State Management
+    Three Principles
+        Single source of truth
+        State is read-only
+        Changes are made with pure functions
+    Core Concepts
+        Actions
+        Reducers
+        Store
+    Mapping State to Props
+    Mapping Dispatch to Props     
+    Data Flow
+    Usage with React
