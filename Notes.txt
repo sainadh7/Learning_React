@@ -48,6 +48,9 @@ Node:
 > A wrapper was written on the Chrome's V8 engine.
 > This made it possible to run the Javascript outside the browser.
 
+Sync/Async Programming:
+> Sync: blocking, Async: Non-blocking
+
 
 
 
