@@ -1,6 +1,7 @@
 import { Link, Route, Switch } from 'react-router-dom';
 import './App.css';
 import { Home } from './home/home';
+import { PageNotFound } from './pagenotfound/pnf';
 import { Products } from './products/products';
 import { Services } from './services/services';
 
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/services">
             <Services></Services>
+          </Route>
+          <Route path="/*">
+            <PageNotFound></PageNotFound>
           </Route>
         </Switch>
       </div>
