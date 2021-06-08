@@ -1,43 +1,61 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class SignIn extends React.Component{
-     un = React.createRef();
-     pwd = React.createRef();
-     //msg = "-----------------";
+export function SignIn(){
+    let un = React.createRef();
+    let pwd = React.createRef();
+    //let msg = "-----------------";
     //State management:
-    //let [msg,setmsg] = React.useState("-------------"); //hook
-    state = {msg:"--------------"};
-    login = () =>{
-        if(this.un.current.value === "batman" && this.pwd.current.value === "password!"){
-            this.setState({msg:"Welcome Bruce Wayne..!"});
-            //this.msg = "Welcome Bruce Wayne..!";
-            //setmsg("Welcome Bruce Wayne..!");
+    let [msg,setmsg] = React.useState("-------------"); //hook
+
+    // React.useEffect(()=>{
+    //     console.log("use efffect did mount");
+    // })
+    React.useEffect(()=>{
+        console.log("use efffect did mount");
+    },[]);
+
+    React.useEffect(()=>{
+        console.log("use efffect did update");
+    },[msg]);
+    // React.useEffect(()=>{
+    //     console.log("use efffect did update");
+    // })
+    
+    React.useEffect(()=>{
+        //if we return a method, it will remove m
+        return () => {
+            console.log("use effect unmount");
+        }
+    },[]);
+    
+    function login()
+    {
+        if(un.current.value === "batman" && pwd.current.value === "password!"){
+            //msg = "Welcome Bruce Wayne..!";
+            setmsg("Welcome Bruce Wayne..!");
         }
         else{
-            this.setState({msg:"You still need to earn it..!"});
-            //this.msg = "You still need to earn it..!"
-            //setmsg("You still need to earn it..!");
+            //msg = "You still need to earn it..!"
+            setmsg("You still need to earn it..!");
         }
         //alert("Username: " + un.current.value + "\nPassword: " + pwd.current.value)
-        //console.log(msg);
-        //alert(this.state.msg);
+        console.log(msg);
+        //alert(msg);
     }
-    render(){
     return(
         <div>
             <div>
                 <label>Username:</label>
-                <input type="text" name="username" ref={this.un}></input>
+                <input type="text" name="username" ref={un}></input>
             </div>
             <div>
                 <label>Password:</label>
-                <input type="password" name="password" ref={this.pwd}></input>
+                <input type="password" name="password" ref={pwd}></input>
             </div>
             <div>
-                <button onClick={this.login}>Sign In</button>
+                <button onClick={login}>Sign In</button>
             </div>
-            <p>{this.state.msg}</p>
+            <p>{msg}</p>
         </div>
     );
-    };
 }

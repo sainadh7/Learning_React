@@ -129,3 +129,8 @@ associating to input: <input ref={v} />
 State Management:
 Whenever model changes, view should also get updated.
 
+Lifecycle methods:
+class components:
+
+function components:
+

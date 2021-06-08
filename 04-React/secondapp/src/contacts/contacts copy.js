@@ -3,15 +3,11 @@ import React from "react";
 export function Contacts(){
     let title = "Contacts";
     let [list,addtoList] = React.useState(["Arjun","Madhav","Krishna"]);
+    console.log(list);
     let item = React.createRef();
-    //console.log(list);
     function addItem(){
-        //console.log([...list,item.current.value]);
-        //console.log(list.push(item.current.value));
-        //list.push(item.current.value);
-        //addtoList(list.slice(0,list.length));
-        addtoList([...list,item.current.value]);
-        
+        list = list.push(item)
+        addtoList(list);
     }
     return(
         <div>
