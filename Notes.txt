@@ -111,3 +111,8 @@ But now, both are equally potent.
 
 Creating an app with typescript support:
 npx create-react-app --template=typescript reacttypepro
+
+
+React Router:
+No router by default, so we need to add a package: react-router-DOM
+yarn add react-router-dom or npm i react-router-dom

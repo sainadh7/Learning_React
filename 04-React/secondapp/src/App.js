@@ -2,20 +2,50 @@ import './App.css';
 import { GetCars } from './cars/cars';
 import { Contacts } from './contacts/contacts';
 import { SignIn } from './login/login'
+import { Home } from './home/home'
+import {Link, Route,Switch} from "react-router-dom"
 
 
 function App() {
   return (
+    // <div className="App">
+    //   <SignIn></SignIn>
+    //   <br />
+    //   <hr></hr>
+    //   <br />
+    //   <Contacts></Contacts>
+    //   <br />
+    //   <hr></hr>
+    //   <br />
+    //   <GetCars></GetCars>
+    // </div>
+
     <div className="App">
-      <SignIn></SignIn>
-      <br />
-      <hr></hr>
-      <br />
-      <Contacts></Contacts>
-      <br />
-      <hr></hr>
-      <br />
-      <GetCars></GetCars>
+      <div>
+        <span>Navigate to:</span>
+        <Link to="/">Home</Link>
+        <Link to="/cars">Cars</Link>
+        <Link to="/contacts">Contacts</Link>
+        <Link to="/login">Login</Link> 
+      </div>
+      <div>
+      <hr/>
+      <br/>
+      <Switch>
+        <Route path="/" exact>
+          <Home></Home>
+        </Route>
+        <Route path="/cars">
+          <GetCars></GetCars>
+        </Route>
+        <Route path="/contacts">
+          <Contacts></Contacts>
+        </Route>
+        <Route path="/login">
+          <SignIn></SignIn>
+        </Route>
+      </Switch>
+      </div>
     </div>
   );
 }
