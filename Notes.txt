@@ -118,3 +118,14 @@ No router by default, so we need to add a package: react-router-DOM
 yarn add react-router-dom or npm i react-router-dom
 
 React Event handling:
+We can create reference variables and associate them to the input elements present in a form.
+During the event handling, we can then access the specific values 
+
+example: 
+creating ref: let v = React.createRef();
+accessing value: v.current.value
+associating to input: <input ref={v} />
+
+State Management:
+Whenever model changes, view should also get updated.
+

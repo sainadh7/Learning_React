@@ -4,6 +4,7 @@ import { Contacts } from './contacts/contacts';
 import { SignIn } from './login/login'
 import { Home } from './home/home'
 import {Link, Route,Switch} from "react-router-dom"
+import { Counter } from './counter/counter';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <span>Navigate to:</span>
         <Link to="/">Home</Link>
         <Link to="/cars">Cars</Link>
+        <Link to="/counters">Counters</Link> 
         <Link to="/contacts">Contacts</Link>
         <Link to="/login">Login</Link> 
       </div>
@@ -37,6 +39,9 @@ function App() {
         </Route>
         <Route path="/cars">
           <GetCars></GetCars>
+        </Route>
+        <Route path="/counters">
+          <Counter></Counter>
         </Route>
         <Route path="/contacts">
           <Contacts></Contacts>
