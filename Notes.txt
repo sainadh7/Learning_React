@@ -131,6 +131,11 @@ Whenever model changes, view should also get updated.
 
 Lifecycle methods:
 class components:
-
 function components:
 
+Component Interaction:
+parent -> child
+child -> parent
+sibling -> sibling
+
+useContext(), createContext() - multilevel communication across components

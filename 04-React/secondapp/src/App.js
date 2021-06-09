@@ -6,6 +6,7 @@ import { Home } from './home/home'
 import {Link, Route,Switch} from "react-router-dom"
 import { Counter } from './counter/counter';
 import { SignUp } from './signup/signup';
+import { Parent } from './lift/parent';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Link to="/contacts">Contacts</Link>
         <Link to="/login">Login</Link> 
         <Link to="/signup">SignUp</Link> 
+        <Link to="/lift">Parent</Link> 
       </div>
       <div>
       <hr/>
@@ -53,6 +55,9 @@ function App() {
         </Route>
         <Route path="/signup">
           <SignUp></SignUp>
+        </Route>
+        <Route path="/lift">
+          <Parent></Parent>
         </Route>
       </Switch>
       </div>
